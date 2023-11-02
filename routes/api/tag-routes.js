@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Tag, Product, ProductTag } = require('../../models');
 
 // The `/api/tags` endpoint
-
+//Send body of json in insomina.
 // Get all tags
 router.get('/', (req, res) => {
   Tag.findAll({
